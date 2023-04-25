@@ -1,0 +1,95 @@
+header{
+  box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.25);
+}
+.header-logo {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+.sidenav-container{
+  backdrop-filter: blur(6px);
+  position: absolute;
+  top:0;
+  right:0;
+  width:76%;
+  z-index: 5;
+  height: 100dvh;
+}
+.blurred-background{
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.desktop-account-types-container{
+  display: flex;
+  align-items: center;
+  font-weight: $--w-regular;
+  font-size: $--body-1;
+  line-height: $--lh-20;
+}
+.desktop-account-types{
+  display: none;
+  .account-types{ 
+    margin: 0 15px;
+  }
+}
+.desktop-about-company-container{
+  display: none;
+  margin-right: 23px;
+  .desktop-about-company{
+    display: flex;
+    align-items: center;
+    padding: 13px 13px;
+    img{
+      margin-right: 7px;
+    }
+  }
+}
+.login-container{
+  display: none;
+  border-radius: 130px;
+  padding: 13px 16px;
+  border: 1.5px solid;
+  margin-right: 40px;
+}
+.desktop-account-types-container{
+  display: none;
+  margin-right: 59px;
+}
+
+// desktop screen design
+@media only screen and (min-width: 1440px) {
+  .mobile-view{
+    display: none;
+  }
+  .header-logo{
+    display: flex;
+  }
+  a{
+    margin-right: 119px !important;
+  }
+  .desktop-account-types{
+    display: block;
+  }
+  .desktop-about-company-container{
+    display: flex;
+  }
+  .desktop-account-types-container{
+    display: flex;
+  }
+  .login-container{
+    display: block;
+  }
+  .header-container{
+    header{
+      height:88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+/* colors */
+.primary {
+  color: $--primary-color;
+}
+.black {
+  color: $--black;
+}
+.dark-grey {
+  color: $--dark-grey !important;
+}
+.light-grey {
+  color: $--light-grey;
+}
+.light-blue {
+  color: $--light-blue;
+}
+.white {
+  color: $--white;
+}
+.white-lilac {
+  color: $--white-lilac;
+}
+.silver {
+  color: $--silver;
+}
+.boulder {
+  color: $--boulder;
+}
+.red {
+  color: $--red;
+}
+.silver-chalice {
+  color: $--silver-chalice;
+}
+.concrete {
+  color: $--concrete;
+}
+.alto {
+  color: $--alto;
+}
+.link-water {
+  color: $--link-water;
+}
+.hawkes-blue {
+  color: $--hawkes-blue;
+}
+
+/* background colors */
+.bg-primary {
+  background-color: $--primary-color;
+}
+.bg-white {
+  background-color: $--white;
+}
+.bg-white-lilac {
+  background-color: $--white-lilac;
+}
+.bg-light-blue {
+  background-color: $--light-blue;
+}
+.bg-hawkes-blue{
+  background-color: $--hawkes-blue
+}
+.bg-black{
+  background-color: $--black;
+}
+.bg-light-dark-grey{
+  background-color: rgba(44, 38, 38, 0.8);
+}
+/* outline colors */
+.outline-primary {
+  outline-color: $--primary-color;
+}
+
+/* caret colors */
+.caret-primary {
+  caret-color: $--primary-color;
+}
+
+/* border colors */
+.border-primary {
+  border-color: $--primary-color !important;
+}
+.border-light-grey {
+  border-color: $--light-grey !important;
+}
+.border-silver {
+  border-color: $--silver !important;
+}
+.border-light-black {
+  border-color:$--light-black !important;
+}

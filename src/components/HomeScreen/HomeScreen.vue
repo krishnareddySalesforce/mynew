@@ -1,0 +1,46 @@
+<template>
+  <div class="home-screen-outer-container">
+    <carousel :per-page="1" class="capone-home-slider" :paginationSize="6"
+      :paginationPadding="4"
+      paginationPosition="bottom-overlay"
+      navigationEnabled=true
+      navigationNextLabel= ''
+      paginationActiveColor="#3772FF">
+      <slide v-for="loan in $constants.loanTypes" :key="loan.id" :id="loan.id" class="home-slides">
+        <div class="slide-contianer">
+          <div class="loan-text-container">
+            <span class="loan-type white">{{ loan.loantype }}</span>
+            <span class="loan-description white">{{ loan.loandesc }}</span>
+          </div>
+          <primary-button :text="$t('APPLY_NOW')" :onClick="() => redirectTo(loan)"/>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</template>
+
+<script>
+import { Carousel, Slide } from 'vue-carousel'
+import PrimaryButton from '../CommonComponents/Buttons/PrimaryButton/PrimaryButton.vue'
+export default {
+  name: 'HomeScreen',
+  components: { Carousel, Slide, PrimaryButton },
+  data () {
+    return {
+    }
+  },
+  methods: {
+    redirectTo (selectedValue) {
+      if (selectedValue.route) {
+        this.$router.push(selectedValue.route)
+      } else {
+        return null
+      }
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+@import './HomeScreen.scss'
+</style>

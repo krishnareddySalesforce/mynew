@@ -1,0 +1,93 @@
+.side-nav-outer-container {
+  padding: 0px 20px 24px 20px;
+  hr {
+    border: 0.5px solid;
+    margin: 0;
+  }
+  .client-outer-container {
+    .client-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-family: $--font-family;
+      font-style: normal;
+      font-weight: $--w-bold;
+      font-size: $--body-1;
+      line-height: 110%;
+    }
+    .greeting-client {
+      margin-top: 16px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      .greeting-txt {
+        font-family: $--font-family;
+        font-style: normal;
+        font-weight: $--w-500;
+        font-size: $--body-3;
+        line-height: 100%;
+      }
+      .client-name {
+        font-family: $--font-family;
+        font-style: normal;
+        font-weight: $--w-bold;
+        font-size: $--body-1;
+        line-height: 100%;
+        margin-top: 8px;
+      }
+    }
+    .account-types-container {
+      margin-bottom: 26px;
+      font-family: $--font-family;
+      font-style: normal;
+      font-weight: $--w-regular;
+      font-size: $--body-1;
+      -webkit-font-smoothing: antialiased !important;
+      line-height: $--lh-20;
+      .account-types {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        .accounts-logo {
+          margin-right: 10px;
+        }
+      }
+      .account-types:nth-child(1){
+        margin-top:26px;
+      }
+    }
+    .company-profile-container {
+      margin-bottom: 26px;
+      font-family: $--font-family;
+      font-style: normal;
+      font-weight: $--w-regular;
+      font-size: $--body-1;
+      line-height: $--lh-20;
+      -webkit-font-smoothing: antialiased !important;
+      .account-types {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        .accounts-logo {
+          margin-right: 10px;
+        }
+      }
+      .account-types:nth-child(1){
+        margin-top:26px;
+      }
+      .logout{
+        .account-types:nth-child(1){
+          margin-top:24px;
+        }
+      }
+      .login{
+        .account-types:nth-child(1){
+          margin-top:24px;
+        }
+      }
+    }
+  }
+}

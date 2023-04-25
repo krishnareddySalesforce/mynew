@@ -1,0 +1,74 @@
+.home-screen-outer-container {
+  width: 100%;
+  height: calc(100dvh - 56px);
+  .home-slides {
+    .loan-text-container {
+      display: flex;
+      flex-direction: column;
+      padding:0 18px;
+      .loan-type{
+        font-family: $--font-family;
+        font-style: normal;
+        font-weight: $--w-bold;
+        font-size: $--heading-4;
+        line-height: 100%;
+        letter-spacing: 0.005em;
+        -webkit-font-smoothing: antialiased !important;
+      }
+      .loan-description {
+        font-family: $--font-family;
+        font-style: normal;
+        font-weight: $--w-500 ;
+        font-size: $--body-1;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        margin-top: 16px;
+      }
+    }
+  }
+  .button-container{
+    position:unset;
+    margin-top:32px;
+    margin-bottom:38px;
+    width:100% ;
+    height:unset;
+    padding: 0px 20px 24px 20px;
+  }
+}
+// desktop screen design
+@media only screen and (min-width: 1024px) {
+  .home-screen-outer-container{
+    .home-slides{
+      .loan-text-container{
+        display: flex;
+        flex-direction: column;
+        width:39%;
+        padding:0;
+        .loan-type{
+          font-weight: $--w-500;
+          font-size: 64px;
+          line-height: 62px;
+        }
+        .loan-description{
+          font-weight: $--w-regular;
+          font-size: $--heading-4;
+          line-height: 32px;
+          margin-top:24px;
+        }
+      }
+    }
+    .button-container{
+      position:unset;
+      margin-top:32px;
+      margin-bottom:38px;
+      width:193px;
+      height:56px;
+      padding:0;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .home-screen-outer-container {
+    height: calc(100dvh - 88px);
+  }
+}

@@ -1,0 +1,46 @@
+
+.button-float-container{
+  padding:0 20px 24px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.primary-cta {
+  border-radius: 16px;
+  height: 56px;
+  font-weight: $--w-500;
+  font-size: $--body-1;
+  font-family: $--font-family;
+  line-height: 100%;
+  border: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .button-container{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .primary-cta {
+      width:416px;
+    }
+  }
+  .button-loader-wrapper{
+    width:416px;
+  } 
+}
+
+.button-loader-wrapper{
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-data {
+  .button-container .primary-cta {
+    width: 192px;
+  }
+}

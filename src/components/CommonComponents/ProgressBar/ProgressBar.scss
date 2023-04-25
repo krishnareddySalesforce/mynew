@@ -1,0 +1,95 @@
+.progress-bar-container {
+  .loan-progress-bar {
+    border-radius: 17px;
+    height: 6px;
+    width: 100%;
+    .progress {
+      height: 6px;
+      border-radius: 17px;
+      width: 33%;
+    }
+  }
+  .button-progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    .previous-button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .btn-text {
+        font-weight: $--w-500;
+        font-size: $--body-3;
+        line-height: $--lh-18;
+        text-align: center;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+      }
+    }
+    .progress-status {
+      font-weight: $--w-500;
+      font-size: $--body-3;
+      line-height: $--lh-18;
+      text-align: center;
+    }
+  }
+  .desktop-view {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+    .mobile-progressbar {
+      display: flex;
+      width: 100%;
+      max-width: 1088px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      .loan-progress-bar {
+        flex-basis: 58%;
+        max-width: 623px;
+        height: 8px;
+        .progress {
+          height: 8px;
+        }
+      }
+    }
+    .desktop-view {
+      display: block;
+    }
+    .button-progress-container {
+      display: none;
+    }
+    .previous-button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 48px;
+      .btn-text {
+        font-weight: $--w-500;
+        font-size: $--body-1;
+        line-height: $--lh-22;
+        letter-spacing: $--ls-15;
+        text-align: center;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+      }
+    }
+    .progress-status {
+      font-weight: $--w-500;
+      font-size: $--body-1;
+      line-height: $--lh-22;
+      letter-spacing: $--ls-15;
+      text-align: center;
+      margin-left: 48px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+.button-container {
+  padding:0 20px 24px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.secondary-cta {
+  border-radius: 16px;
+  border: 1px solid;
+  height: 56px;
+  font-weight: $--w-500;
+  font-size: $--body-1;
+  font-family: $--font-family;
+  line-height: 100%;
+  width: 100%;
+}
+
+.button-loader-wrapper{
+  border-radius: 16px;
+  border: 1px solid;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

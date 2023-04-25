@@ -1,0 +1,79 @@
+// home screen slider css 
+.capone-home-slider{
+  .VueCarousel-pagination--bottom-overlay{
+    bottom:20px !important;
+  }
+  .VueCarousel-dot--active{
+    width:15px !important;
+    border-radius: 12px !important;
+  }
+  .slide-contianer{
+    background: linear-gradient(179.41deg, rgba(33, 33, 33, 0.03) 38.64%, rgba(41, 41, 41, 0.93) 69.58%, #131313 99.49%);
+    height: calc(100dvh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #slide-1{
+    background-image:url("https://d3s87pah5oatx.cloudfront.net/uploads/774cd31d-571e-49e3-a986-b425a5f3aa23/original/Personal-loans-large-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100dvh - 56px);
+  }
+  #slide-2{
+    background-image: url('https://d3s87pah5oatx.cloudfront.net/uploads/23533d0e-5b51-4ba6-b12f-709b913edaab/original/mortgage-large-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100dvh - 56px);
+  }
+  #slide-3{
+    background-image: url('https://d3s87pah5oatx.cloudfront.net/uploads/191539b9-c349-4450-ade9-1a06e9add2fd/original/current-accounts-large-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100dvh - 56px);
+  }
+  .VueCarousel-navigation{
+    .VueCarousel-navigation-next{
+      display: none;
+    }
+  }
+}
+// desktop screen design
+@media only screen and (min-width: 1024px) {
+  .capone-home-slider{
+    #slide-1{
+      background-image:url("https://d3s87pah5oatx.cloudfront.net/uploads/bbc5c492-d873-429c-be0d-54677471a0ed/original/personal-loans-desktop.svg");
+    }
+    #slide-2{
+      background-image: url('https://d3s87pah5oatx.cloudfront.net/uploads/ac78f33c-4fda-4728-8c04-c8810220962b/original/Mortgage-desktop-img.svg');
+    }
+    #slide-3{
+      background-image: url('https://d3s87pah5oatx.cloudfront.net/uploads/f8c1bbb5-4eb1-4d99-99b8-b9e9257a7e7f/original/current-accounts-desktop-img.svg');
+    }
+    .slide-contianer{
+      background: linear-gradient(179.41deg, rgba(33, 33, 33, 0.03) 38.64%, rgba(41, 41, 41, 0.93) 69.58%, #131313 99.49%);
+      justify-content: flex-start;
+      padding:104px 0 0 175px;
+    }
+    .VueCarousel-navigation{
+      .VueCarousel-navigation-next{
+        display:block;
+        right:101px;
+        background: url('https://d3s87pah5oatx.cloudfront.net/uploads/71c33300-34c4-4312-a7da-2cbf96a1d590/original/carousal-next-arrow.svg');
+        background-color: $--crater-brown;
+        width:48px;
+        height:48px;
+        border-radius:12px;
+        padding:0;
+        margin:0
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #slide-1,#slide-2,#slide-3{
+    height: calc(100dvh - 88px) !important;
+  }
+}
