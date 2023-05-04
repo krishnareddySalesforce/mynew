@@ -24,6 +24,11 @@
     justify-content: center;
     .primary-cta {
       width:416px;
+      font-size: $--heading-5;
+      line-height: $--lh-24;
+      border-radius: 12px;
+      letter-spacing: $--ls-15;
+      -webkit-font-smoothing: antialiased !important;
     }
   }
   .button-loader-wrapper{
@@ -42,5 +47,6 @@
 .modal-data {
   .button-container .primary-cta {
     width: 192px;
+    line-height: $--lh-18 !important;
   }
 }

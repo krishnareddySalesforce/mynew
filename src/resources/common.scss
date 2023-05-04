@@ -5,18 +5,22 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 // styles for input field
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 .radio-input {
   margin: 3px 0 0;
   width: 16px;
   height: 16px;
 }
+
 input[type="radio"] {
   appearance: initial;
 }
+
 input[type="radio"]:after {
   width: 16px;
   height: 16px;
@@ -34,6 +38,7 @@ input[type="radio"]:checked:after {
   padding: 2px;
   box-sizing: border-box;
 }
+
 .input-field {
   background: transparent;
   border: 1px solid $--silver;
@@ -50,10 +55,12 @@ input[type="radio"]:checked:after {
   z-index: 2;
   caret-color: $--primary-color;
   -webkit-font-smoothing: antialiased !important;
+
   &:focus {
     border: 1px solid $--primary-color;
     outline: $--primary-color;
   }
+
   &::placeholder {
     font-family: $--font-family;
     font-weight: $--w-regular;
@@ -63,35 +70,45 @@ input[type="radio"]:checked:after {
     color: $--dark-grey;
     -webkit-font-smoothing: antialiased !important;
   }
+
   &::placeholder {
     color: transparent;
   }
+
   &:focus::placeholder {
     color: $--dark-grey;
   }
 }
+
 .date-field {
   letter-spacing: $--ls-165;
+
   &::placeholder {
     color: transparent;
   }
+
   &:focus::placeholder {
     color: $--dark-grey;
   }
 }
+
 .error-input-field {
   border: 1px solid $--red;
+
   &:focus {
     border: 1px solid $--red;
   }
 }
+
 .input-field-floating-label {
   display: flex;
   flex-direction: column;
   max-height: 48px;
+
   .active-input {
-    color: $--black;
+    color: $--black !important;
   }
+
   .floating-label {
     top: -34px;
     left: 16px;
@@ -108,6 +125,7 @@ input[type="radio"]:checked:after {
     z-index: 1;
     -webkit-font-smoothing: antialiased !important;
   }
+
   .floating-number-field:not(:placeholder-shown) ~ .floating-label,
   .floating-number-field:focus ~ .floating-label {
     display: flex;
@@ -126,6 +144,7 @@ input[type="radio"]:checked:after {
     color: $--dark-grey;
     z-index: 2;
   }
+
   .floating-number-field:not(:placeholder-shown) ~ .income-euro-symbol {
     color: $--black !important;
   }
@@ -145,6 +164,7 @@ input[type="radio"]:checked:after {
   line-height: $--lh-20;
   letter-spacing: $--ls-15;
   z-index: 0;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 // styles for common CTA
@@ -152,11 +172,36 @@ input[type="radio"]:checked:after {
   background: $--silver-chalice;
   color: $--white;
 }
+.primary-cta:enabled {
+  background-position: center;
+  transition: background 0.8s;
+}
+.primary-cta:hover:enabled {
+  background: #497FFF radial-gradient(circle, transparent 1%, #497FFF 1%) center/15000%;
+}
+.primary-cta:active:enabled {
+  background-color: #3772ff;
+  background-size: 100%;
+  transition: background 0s;
+}
 
 .secondary-cta:disabled {
   background: $--white;
   color: $--silver-chalice;
   border: 1px solid $--silver-chalice !important;
+}
+
+.secondary-cta:enabled {
+  background-position: center;
+  transition: background 0.8s;
+}
+.secondary-cta:hover:enabled {
+  background: #ffffff radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+}
+.secondary-cta:active:enabled {
+  background-color: #F5F4F7;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .margin-top-24 {
@@ -169,20 +214,40 @@ input[type="radio"]:checked:after {
   height: 30px;
   width: 30px;
   border-top: 5px solid $--primary-color;
-  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+  -webkit-animation: spin 1.5s linear infinite;
+  /* Safari */
   animation: spin 1.5s linear infinite;
 }
+// scrollbar styling for webkit browsers
 ::-webkit-scrollbar {
-  width: 4px; /* width of the scrollbar */
+  width: 4px;
+  /* width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $--link-water; /* color of the track */
+  background-color: $--link-water;
+  /* color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $--san-marino; /* color of the thumb */
-  border-radius: 5px; /* rounded corners of the thumb */
+  background-color: $--san-marino;
+  /* color of the thumb */
+  border-radius: 5px;
+  /* rounded corners of the thumb */
+}
+// scrollbar styling for firefox
+::-moz-scrollbar {
+  width:4px;
+}
+::-moz-scrollbar-track {
+  background-color: $--link-water;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: $--san-marino;
+  /* color of the thumb */
+  border-radius: 5px;
+  /* rounded corners of the thumb */
 }
 
 /* Safari */
@@ -203,6 +268,7 @@ input[type="radio"]:checked:after {
     transform: rotate(360deg);
   }
 }
+
 // styles for li
 li {
   &::marker {
@@ -210,6 +276,7 @@ li {
     font-size: $--body-3;
   }
 }
+
 .desktop-inner-padding {
   padding: 0px 103px;
 }
@@ -218,7 +285,9 @@ li {
   .desktop-inner-layout {
     background: $--white;
     border-radius: 16px;
-    height: calc(100dvh - 112px);
+    min-height: calc(100dvh - 112px);
+    height: max-content;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.05);
   }
   .desktop-inner-padding {
     padding: unset;
@@ -229,28 +298,46 @@ li {
   .input-field {
     min-height: 56px;
     max-height: 56px;
+    font-size: $--heading-5;
+    line-height: $--lh-24;
+    &::placeholder {
+      font-size: $--heading-5;
+      letter-spacing: $--ls-15;
+      line-height: 24px;
+    }
   }
   .input-field-floating-label {
     max-height: 56px;
     .floating-label {
-      top: -37px;
+      top: -40px;
+      font-size: $--heading-5;
+      letter-spacing: $--ls-15;
+      line-height: 24px;
     }
     .floating-number-field:not(:placeholder-shown) ~ .floating-label,
     .floating-number-field:focus ~ .floating-label {
       top: -66px;
+      line-height: $--lh-18;
     }
   }
   .income-euro-symbol {
     height: 56px;
+    line-height: $--lh-24;
+    font-size: $--heading-5;
+    padding:18px 16px;
   }
-} 
+  .field-error-message {
+    line-height: 16px !important;
+    font-size: 14px !important;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .desktop-inner-layout {
     min-height: calc(100dvh - 144px);
     height: max-content;
   }
 }
-
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .input-field {
     min-height: 50px;
@@ -270,5 +357,28 @@ li {
   }
   .secondary-cta {
     height: 58px !important;
+  }
+}
+
+// to hide the contact auto fill option in safari
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+// to get rid of the blue background in autofill
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  input:disabled {
+      color: $--black !important; /* on Safari and Chrome  */
   }
 }

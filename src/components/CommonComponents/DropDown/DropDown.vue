@@ -2,7 +2,7 @@
   <div class="drop-down-outer-container bg-light-blue">
     <div class="drop-down-option"
       :key="data.id"
-      :class="{ 'selected bg-hawkes-blue': data.value === optionId }"
+      :class="{'selected bg-hawkes-blue': data.value === optionId }"
       v-for="data in dropdownData">
       <label
         class="drop-down-value"

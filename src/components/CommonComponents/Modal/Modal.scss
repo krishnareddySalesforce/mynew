@@ -29,10 +29,12 @@
   line-height: $--lh-30;
   letter-spacing: $--ls-25;
   border-radius: 16px 16px 0px 0px;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .modal-data {
   padding: 32px 24px;
+  -webkit-font-smoothing: antialiased !important;
   p {
     font-weight: $--w-regular;
     font-size: $--body-1;

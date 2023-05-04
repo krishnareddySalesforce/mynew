@@ -27,4 +27,4 @@ new Vue({
   store,
   render: h => h(App),
   i18n
-}).$mount('#pre-approval-loans-widget')
+}).$mount('#pre-approval-loans-home')

@@ -11,13 +11,16 @@
 .drop-down-option{
   display: flex;
   flex-direction: column;
-  padding:8px 16px;
+  :hover {
+    background-color: $--hawkes-blue;
+  }
 }
 .drop-down-value{
   font-weight: $--w-regular;
   font-size: $--body-1;
   line-height: $--lh-20;
   letter-spacing: $--ls-15;
+  padding:8px 16px;
   -webkit-font-smoothing: antialiased !important;
 }
 .selected{

@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import liquidParser from '../../../liquid/liquidParser'
 export default {
   name: 'SideNav',
   data: () => ({
@@ -49,7 +50,9 @@ export default {
   methods: {
     navigateTo (selectedValue) {
       if (selectedValue.route) {
-        this.$router.push(selectedValue.route)
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
+        // this.$router.push(selectedValue.route)
       } else {
         return null
       }
