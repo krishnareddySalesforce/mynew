@@ -43,6 +43,7 @@
 <script>
 import SideNav from '../SideNav/SideNav.vue'
 import { mapGetters, mapActions } from 'vuex'
+import liquidParser from '../../../liquid/liquidParser'
 export default {
   name: 'HeaderComponent',
   components: { SideNav },
@@ -56,7 +57,9 @@ export default {
     ...mapActions(['closeSideNav', 'updateAccountNavSelected', 'updateProfileNavSelected']),
     ...mapGetters(['getNavSelected']),
     redirectToHome () {
-      this.$router.push('/')
+      const accountUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${accountUrl}`
+      // this.$router.push('/')
     },
     showSideNavBar () {
       this.closeSideNav(true)
@@ -64,7 +67,9 @@ export default {
     navigateTo (selectedValue) {
       this.updateAccountNavSelected(selectedValue.id)
       if (selectedValue.route) {
-        this.$router.push(selectedValue.route)
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
+        // this.$router.push(selectedValue.route)
       } else {
         return null
       }
@@ -72,7 +77,9 @@ export default {
     navigateToProfile (selectedValue) {
       this.updateProfileNavSelected(selectedValue.id)
       if (selectedValue.route) {
-        this.$router.push(selectedValue.route)
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
+        // this.$router.push(selectedValue.route)
       } else {
         return null
       }

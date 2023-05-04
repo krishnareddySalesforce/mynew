@@ -1,12 +1,12 @@
 export default {
   account: {
-    url: 'https://fed-team.modyo.cloud'
+    url: 'https://fincuro.modyo.be'
   },
   user: {
     access_token: ''
   },
   site: {
-    url: 'https://fed-team.modyo.cloud/test',
+    url: 'https://fincuro.modyo.be',
     name: 'my site',
     lang: 'en'
   },
@@ -23,6 +23,7 @@ export default {
   }],
   vars: {
     'api-base': 'https://api.test',
+    'base-route': '/ui-dev-qa-integration-d3',
     base_path: 'https://fed-team.modyo.cloud'
   }
 }

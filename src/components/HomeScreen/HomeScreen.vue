@@ -23,13 +23,16 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import PrimaryButton from '../CommonComponents/Buttons/PrimaryButton/PrimaryButton.vue'
+import liquidParser from '../../liquid/liquidParser'
 export default {
   name: 'HomeScreen',
   components: { Carousel, Slide, PrimaryButton },
   methods: {
     redirectTo (selectedValue) {
       if (selectedValue.route) {
-        this.$router.push(selectedValue.route)
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
+        // this.$router.push(selectedValue.route)
       } else {
         return null
       }
