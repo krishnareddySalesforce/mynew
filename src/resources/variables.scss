@@ -12,7 +12,7 @@ $--white: #ffffff;
 $--white-lilac: #f6f7fc;
 $--silver: #bdbdbd;
 $--boulder: #7d7d7d;
-$--crater-brown: #433F3E;
+$--crater-brown: rgba(85, 85, 85, 0.3);
 $--red: #ff0000;
 $--silver-chalice: #ababab;
 $--concrete: #f3f3f3;
@@ -23,6 +23,7 @@ $--dodger-blue: #5A8BFF;
 $--san-marino: #A2B1C9;
 $--light-black: rgba(0, 0, 0, 0.1);
 $--light-dark-grey: rgba(44, 38, 38, 0.8);
+$--wind-sand: #F4F4F4;
 
 
 // font size
@@ -48,6 +49,7 @@ $--lh-14: 14px;
 $--lh-20: 20px;
 $--lh-15: 15px;
 $--lh-24: 24px;
+$--lh-72: 72px;
 
 // font weight
 $--w-regular: 400;
@@ -59,5 +61,6 @@ $--w-600: 600;
 // letter spacing
 $--ls-15: 0.15px;
 $--ls-25: 0.25px;
+$--ls-35:0.035px;
 $--ls-165: 1.65px;
 $--ls-04: 0.04px;

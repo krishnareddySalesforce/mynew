@@ -25,5 +25,11 @@ export default {
   },
   getSideNav (state) {
     return state.toggleSideNav
+  },
+  getNavSelected (state) {
+    return {
+      navAccountSelected: state.navAccountsSelected,
+      navProfileSelected: state.navProfileSelected
+    }
   }
 }

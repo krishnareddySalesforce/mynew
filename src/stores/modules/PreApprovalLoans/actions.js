@@ -35,5 +35,13 @@ export default {
 
   closeSideNav ({ commit }, payload) {
     commit('setcloseSideNavBar', payload)
+  },
+
+  updateAccountNavSelected ({ commit }, payload) {
+    commit('setNavAccountSelected', payload)
+  },
+
+  updateProfileNavSelected ({ commit }, payload) {
+    commit('setNavProfileSelected', payload)
   }
 }

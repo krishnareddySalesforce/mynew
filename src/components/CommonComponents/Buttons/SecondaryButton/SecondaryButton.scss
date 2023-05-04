@@ -25,3 +25,13 @@
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (min-width: 1024px) {
+  .secondary-cta {
+    font-size: $--heading-5;
+    line-height: $--lh-24;
+    letter-spacing: $--ls-15;
+    border-radius: 12px;
+    -webkit-font-smoothing: antialiased !important;
+  }
+}

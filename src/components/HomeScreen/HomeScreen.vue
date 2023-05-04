@@ -5,6 +5,7 @@
       paginationPosition="bottom-overlay"
       navigationEnabled=true
       navigationNextLabel= ''
+      navigationPrevLabel= ''
       paginationActiveColor="#3772FF">
       <slide v-for="loan in $constants.loanTypes" :key="loan.id" :id="loan.id" class="home-slides">
         <div class="slide-contianer">
@@ -25,10 +26,6 @@ import PrimaryButton from '../CommonComponents/Buttons/PrimaryButton/PrimaryButt
 export default {
   name: 'HomeScreen',
   components: { Carousel, Slide, PrimaryButton },
-  data () {
-    return {
-    }
-  },
   methods: {
     redirectTo (selectedValue) {
       if (selectedValue.route) {

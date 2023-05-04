@@ -66,7 +66,9 @@ export default {
           yearsLived: ''
         }
       },
-      toggleSideNav: false
+      toggleSideNav: false,
+      navAccountsSelected: 0,
+      navProfileSelected: 0
     }
   },
   getters: loanGetters,

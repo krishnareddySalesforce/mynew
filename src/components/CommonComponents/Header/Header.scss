@@ -1,4 +1,4 @@
-header{
+header {
   box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.25);
 }
 .header-logo {
@@ -10,86 +10,188 @@ header a {
   display: flex;
   align-items: center;
 }
-.sidenav-container{
+.sidenav-container {
   backdrop-filter: blur(6px);
   position: absolute;
-  top:0;
-  right:0;
-  width:76%;
+  top: 0;
+  right: 0;
+  width: 76%;
   z-index: 5;
   height: 100dvh;
 }
-.blurred-background{
+.blurred-background {
   filter: blur(6px);
   pointer-events: none;
 }
 
-.desktop-account-types-container{
+.desktop-account-types-container {
   display: flex;
   align-items: center;
   font-weight: $--w-regular;
   font-size: $--body-1;
   line-height: $--lh-20;
 }
-.desktop-account-types{
+.desktop-account-types {
   display: none;
-  .account-types{ 
+  .account-types {
     margin: 0 15px;
   }
 }
-.desktop-about-company-container{
+.desktop-about-company-container {
   display: none;
   margin-right: 23px;
-  .desktop-about-company{
+  .desktop-about-company {
     display: flex;
-    align-items: center;
-    padding: 13px 13px;
-    img{
-      margin-right: 7px;
+    .desktop-about-company-element {
+      display: flex;
+      align-items: center;
+      margin: 0 13px;
+      img {
+        margin-right: 7px;
+      }
     }
   }
 }
-.login-container{
+.login-container {
   display: none;
   border-radius: 130px;
-  padding: 13px 16px;
   border: 1.5px solid;
   margin-right: 40px;
 }
-.desktop-account-types-container{
+.desktop-account-types-container {
   display: none;
-  margin-right: 59px;
+  margin-right: 66.5px;
 }
 
 // desktop screen design
 @media only screen and (min-width: 1440px) {
-  .mobile-view{
+  .mobile-view {
     display: none;
   }
-  .header-logo{
+  .header-logo {
     display: flex;
+    padding: 0 24px;
+    height: 100%;
   }
-  a{
-    margin-right: 119px !important;
+  a {
+    margin-right: 109px !important;
+    .dynamic-bank-logo {
+      width: 110px !important;
+      height: 44px;
+    }
   }
-  .desktop-account-types{
+  .desktop-account-types {
     display: block;
-  }
-  .desktop-about-company-container{
     display: flex;
+    align-items: center;
+    height: 100%;
+    -webkit-font-smoothing: antialiased !important;
   }
-  .desktop-account-types-container{
+  .desktop-account-types:hover {
+    border-bottom: 4px solid;
+    margin-bottom: 4px;
+    .account-types {
+      font-weight: $--w-bold !important;
+      margin-top: 8px;
+    }
+    .about-company {
+      font-weight: $--w-bold !important;
+      margin-top: 8px;
+    }
+    .accounts-logo {
+      margin-top: 8px;
+    }
+  }
+  .desktop-account-types.active {
+    border-bottom: 4px solid;
+    margin-bottom: 4px;
+    .account-types {
+      font-weight: $--w-bold !important;
+      margin-top: 8px;
+    }
+    .about-company {
+      font-weight: $--w-bold !important;
+      margin-top: 8px;
+    }
+    .accounts-logo {
+      margin-top: 8px;
+    }
+  }
+  .desktop-about-company-container {
     display: flex;
+    .desktop-about-company {
+      letter-spacing: $--ls-15;
+      line-height: $--lh-22;
+      font-weight: $--w-regular;
+      -webkit-font-smoothing: antialiased !important;
+    }
   }
-  .login-container{
+  .desktop-about-company.active {
+    border-bottom: 4px solid;
+    .account-types {
+      font-weight: $--w-bold !important;
+      margin-top: 4px;
+    }
+    .about-company {
+      font-weight: $--w-bold !important;
+      margin-top: 4px;
+    }
+    .accounts-logo {
+      margin-top: 4px;
+    }
+  }
+  .desktop-about-company:hover {
+    border-bottom: 4px solid;
+    .account-types {
+      font-weight: $--w-bold !important;
+      margin-top: 4px;
+    }
+    .about-company {
+      font-weight: $--w-bold !important;
+      margin-top: 4px;
+    }
+    .accounts-logo {
+      margin-top: 4px;
+    }
+  }
+  .desktop-account-types-container {
+    display: flex;
+    .account-types {
+      letter-spacing: $--ls-15;
+      line-height: $--lh-22;
+      font-weight: $--w-regular;
+    }
+  }
+  .login-container {
     display: block;
+    margin: 24px 0;
+    width: 75px !important;
+    height: 42px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased !important;
+    .account-txt {
+      letter-spacing: $--ls-15;
+      line-height: $--lh-22;
+      font-weight: $--w-regular;
+    }
   }
-  .header-container{
-    header{
-      height:88px;
+  .header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    header {
+      height: 88px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .sidenav-container {
+    width: 50%;
   }
 }

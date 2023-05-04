@@ -596,10 +596,10 @@ export const constants = {
     }
   ],
   approvedImages: {
-    'Home improvement': 'https://d3s87pah5oatx.cloudfront.net/uploads/6ebb5151-b8db-4d5b-90a7-26ec015dc472/original/Group_48097300.svg',
-    'Used vehicle': 'https://d3s87pah5oatx.cloudfront.net/uploads/62f0ad88-c484-4eee-a1b9-db2b2b042ebe/original/Group_48097302.svg',
-    Holiday: 'https://d3s87pah5oatx.cloudfront.net/uploads/d2125076-4c11-45a0-b6e0-bdb1a4918943/original/Group_48097301.svg',
-    'Rainy day fund': 'https://d3s87pah5oatx.cloudfront.net/uploads/d36de1b2-075c-4ded-a074-cc58627bfcdc/original/Group_48097098.svg'
+    'Home improvement': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/6ebb5151-b8db-4d5b-90a7-26ec015dc472/original/Group_48097300.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/c619de88-007e-45fb-a822-c721d0b894e9/original/Group_48097262.svg' },
+    'Used vehicle': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/62f0ad88-c484-4eee-a1b9-db2b2b042ebe/original/Group_48097302.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/00eda964-aa71-4e93-bf21-1a4f39c64ab2/original/Car_Loan_2_.svg' },
+    Holiday: { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/d2125076-4c11-45a0-b6e0-bdb1a4918943/original/Group_48097301.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/616af254-7a74-48e7-bc4e-56f4c22720a6/original/Holidays.svg' },
+    'Rainy day fund': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/d36de1b2-075c-4ded-a074-cc58627bfcdc/original/Group_48097098.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/115ea5dc-0d87-40d0-a7e5-4bbfd1b48e07/original/Rainy_Day.svg' }
   },
   approvedText: {
     'Home improvement': i18n.t('HOME_LOAN_APPLIED_TEXT'),

@@ -28,5 +28,13 @@ export default {
   },
   setcloseSideNavBar (state, param) {
     state.toggleSideNav = param
+  },
+  setNavAccountSelected (state, param) {
+    state.navProfileSelected = 0
+    state.navAccountsSelected = param
+  },
+  setNavProfileSelected (state, param) {
+    state.navAccountsSelected = 0
+    state.navProfileSelected = param
   }
 }

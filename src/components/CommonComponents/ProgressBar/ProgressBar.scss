@@ -76,6 +76,7 @@
         line-height: $--lh-22;
         letter-spacing: $--ls-15;
         text-align: center;
+        -webkit-font-smoothing: antialiased !important;
       }
       .btn-icon {
         width: 24px;
@@ -90,6 +91,7 @@
       letter-spacing: $--ls-15;
       text-align: center;
       margin-left: 48px;
+      -webkit-font-smoothing: antialiased !important;
     }
   }
 }

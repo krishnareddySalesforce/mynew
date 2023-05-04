@@ -53,7 +53,7 @@
   background-color: $--white;
 }
 .bg-white-lilac {
-  background-color: $--white-lilac;
+  background-color: $--white-lilac !important;
 }
 .bg-light-blue {
   background-color: $--light-blue;
@@ -66,6 +66,9 @@
 }
 .bg-light-dark-grey{
   background-color: rgba(44, 38, 38, 0.8);
+}
+.bg-wind-sand {
+  background-color: $--wind-sand;
 }
 /* outline colors */
 .outline-primary {

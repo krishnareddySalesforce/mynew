@@ -26,6 +26,11 @@ export default {
           if (enteredValue.length > 2 && enteredValue !== enteredValue.replaceAll(',', '') && enteredValue.length - enteredValue.replaceAll(',', '').length === 0 && key !== 37 && key !== 39) {
             caret = caret - 1
           }
+          if ((key === 8 || key === 46) && enteredValue.length > 2) {
+            if (caret === 3 || caret === 2) {
+              caret = caret - 1
+            }
+          }
           element.selectionStart = caret
           element.selectionEnd = caret
         } else {
