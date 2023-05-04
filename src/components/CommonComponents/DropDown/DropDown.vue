@@ -1,18 +1,19 @@
 <template>
   <div class="drop-down-outer-container bg-light-blue">
-    <div class="drop-down-option"
-      :key="data.id"
-      :class="{'selected bg-hawkes-blue': data.value === optionId }"
-      v-for="data in dropdownData">
-      <label
-        class="drop-down-value"
-        @click="selected(data)"
-        :class="{'dark-grey' : data.id !== optionId, 'black': data.id === optionId}"
-      >{{data.value}}</label>
+    <div class="drop-down-inner-container">
+      <div class="drop-down-option"
+        :key="data.id"
+        :class="{'selected bg-hawkes-blue': data.value === optionId }"
+        v-for="data in dropdownData">
+        <label
+          class="drop-down-value"
+          @click="selected(data)"
+          :class="{'dark-grey' : data.id !== optionId, 'black': data.id === optionId}"
+        >{{data.value}}</label>
+      </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'DropDown',

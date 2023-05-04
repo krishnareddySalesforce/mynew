@@ -1,18 +1,23 @@
 .drop-down-outer-container{
   box-shadow: 2px 4px 8px rgba(0, 42, 88, 0.15);
   border-radius: 8px;
-  padding: 16px 0;
+  padding: 16px 4px;
   position:absolute;
   z-index: 3;
-  overflow-y: scroll;
   width: 100%;
   box-sizing: border-box;
+  .drop-down-inner-container{
+    overflow-y: scroll;
+    height:200px;
+    padding-right: 4px;
+  }
 }
+
 .drop-down-option{
   display: flex;
   flex-direction: column;
   :hover {
-    background-color: $--hawkes-blue;
+    color:  $--black !important;
   }
 }
 .drop-down-value{
@@ -31,5 +36,6 @@
     font-size: $--body-1;
     line-height: $--lh-20;
     letter-spacing: $--ls-15;
+    color:  $--black !important;
   }
 }
