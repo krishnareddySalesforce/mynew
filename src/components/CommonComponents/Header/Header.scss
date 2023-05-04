@@ -88,8 +88,7 @@ header a {
     -webkit-font-smoothing: antialiased !important;
   }
   .desktop-account-types:hover {
-    border-bottom: 4px solid;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     .account-types {
       font-weight: $--w-bold !important;
       margin-top: 8px;
@@ -139,9 +138,12 @@ header a {
     .accounts-logo {
       margin-top: 4px;
     }
+    &:hover{
+      margin-bottom: 0;
+    }
   }
   .desktop-about-company:hover {
-    border-bottom: 4px solid;
+    margin-bottom: 4px;
     .account-types {
       font-weight: $--w-bold !important;
       margin-top: 4px;
