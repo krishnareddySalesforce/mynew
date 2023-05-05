@@ -6,7 +6,7 @@
         <div class="btn-text dark-grey">{{$t("PREVIOUS_BTN_TEXT")}}</div>
       </div>
       <div class="loan-progress-bar bg-light-blue">
-        <div class="progress bg-primary" :style="getProgress"></div>
+        <div class="progress bg-jungle-green" :style="getProgress"></div>
       </div>
       <div class="progress-status dark-grey desktop-view">
         {{`${completedSteps}/${totalSteps}`}}

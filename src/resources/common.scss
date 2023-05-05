@@ -33,7 +33,7 @@ input[type="radio"]:after {
 }
 
 input[type="radio"]:checked:after {
-  background-color: $--primary-color;
+  background-color: $--mirage;
   border: 3px solid $--link-water;
   padding: 2px;
   box-sizing: border-box;
@@ -53,12 +53,12 @@ input[type="radio"]:checked:after {
   line-height: $--lh-20;
   font-size: $--body-1;
   z-index: 2;
-  caret-color: $--primary-color;
+  caret-color: $--mirage;
   -webkit-font-smoothing: antialiased !important;
 
   &:focus {
-    border: 1px solid $--primary-color;
-    outline: $--primary-color;
+    border: 1px solid $--mirage;
+    outline: $--mirage;
   }
 
   &::placeholder {
@@ -177,10 +177,10 @@ input[type="radio"]:checked:after {
   transition: background 0.8s;
 }
 .primary-cta:hover:enabled {
-  background: #497FFF radial-gradient(circle, transparent 1%, #497FFF 1%) center/15000%;
+  background: #FDE00B radial-gradient(circle, transparent 1%, #FDE00B 1%) center/15000%;
 }
 .primary-cta:active:enabled {
-  background-color: #3772ff;
+  background-color: #FDE00B;
   background-size: 100%;
   transition: background 0s;
 }
@@ -213,7 +213,7 @@ input[type="radio"]:checked:after {
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  border-top: 5px solid $--primary-color;
+  border-top: 5px solid $--mirage;
   -webkit-animation: spin 1.5s linear infinite;
   /* Safari */
   animation: spin 1.5s linear infinite;
@@ -313,6 +313,7 @@ li {
       font-size: $--heading-5;
       letter-spacing: $--ls-15;
       line-height: 24px;
+      -webkit-font-smoothing: antialiased !important;
     }
     .floating-number-field:not(:placeholder-shown) ~ .floating-label,
     .floating-number-field:focus ~ .floating-label {
@@ -325,6 +326,7 @@ li {
     line-height: $--lh-24;
     font-size: $--heading-5;
     padding:18px 16px;
+    -webkit-font-smoothing: antialiased !important;
   }
   .field-error-message {
     line-height: 16px !important;

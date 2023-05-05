@@ -6,7 +6,7 @@
       navigationEnabled=true
       navigationNextLabel= ''
       navigationPrevLabel= ''
-      paginationActiveColor="#3772FF">
+      paginationActiveColor="#29B5A1">
       <slide v-for="loan in $constants.loanTypes" :key="loan.id" :id="loan.id" class="home-slides">
         <div class="slide-contianer">
           <div class="loan-text-container">

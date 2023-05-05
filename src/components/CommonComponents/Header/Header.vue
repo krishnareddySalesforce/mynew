@@ -1,9 +1,9 @@
 <template>
-<div class="header-container bg-primary">
+<div class="header-container bg-mirage">
   <header :class="{'blurred-background': getSideNav === true}" >
     <div class="header-logo">
       <a @click=redirectToHome>
-        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/8f4fcf95-7ddc-4664-9320-674f80610ccb/original/caponelogo.svg" alt="Dynamic Bank" class="dynamic-bank-logo" />
+        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/12f4d8ec-4dfe-4f28-b0bd-4183148d68ce/original/C1_LOGO_PRIMARY_BLUE_RED_CMYK_NOREG_1.svg" alt="Dynamic Bank" class="dynamic-bank-logo" />
       </a>
       <img
         src="https://d3s87pah5oatx.cloudfront.net/uploads/4d6d3ad8-1492-4a51-ace4-58bbd50c75fa/original/hamburgermenu.svg"

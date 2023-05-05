@@ -1,7 +1,7 @@
 <template>
-  <div :class="{'button-float-container' : isButtonFloat }" class='button-container'>
-    <button class='primary-cta white bg-primary' @click="onClick" :disabled="disabled" v-if="!isButtonLoading">{{ text }}</button>
-    <div class="button-loader-wrapper bg-primary" v-if="isButtonLoading">
+  <div :class="{'button-float-container' : isButtonFloat }" class='button-container border-black'>
+    <button class='primary-cta black bg-lemon' @click="onClick" :disabled="disabled" v-if="!isButtonLoading">{{ text }}</button>
+    <div class="button-loader-wrapper bg-lemon" v-if="isButtonLoading">
       <div class="primary-button-loader" ></div>
     </div>
   </div>

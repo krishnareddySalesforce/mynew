@@ -44,7 +44,18 @@
 .hawkes-blue {
   color: $--hawkes-blue;
 }
-
+.mirage {
+  color:  $--mirage;
+}
+.lemon {
+  color:  $--lemon;
+}
+.jungle-green {
+  color: $--jungle-green;
+}
+.humming-bird{
+  color: $--humming-bird
+}
 /* background colors */
 .bg-primary {
   background-color: $--primary-color;
@@ -70,6 +81,18 @@
 .bg-wind-sand {
   background-color: $--wind-sand;
 }
+.bg-mirage {
+  background-color: $--mirage;
+}
+.bg-lemon {
+  background-color: $--lemon;
+}
+.bg-jungle-green {
+  background-color: $--jungle-green;
+}
+.bg-humming-bird {
+  background-color: $--humming-bird;
+}
 /* outline colors */
 .outline-primary {
   outline-color: $--primary-color;
@@ -92,4 +115,7 @@
 }
 .border-light-black {
   border-color:$--light-black !important;
+}
+.border-black {
+  border-color: $--black;
 }
