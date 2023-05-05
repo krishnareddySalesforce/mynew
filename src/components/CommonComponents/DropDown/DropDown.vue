@@ -27,7 +27,8 @@ export default {
       required: true
     },
     dropDownHeight: {
-      required: true
+      required: false,
+      default: '180px'
     },
     scroll: {
       type: Boolean,
