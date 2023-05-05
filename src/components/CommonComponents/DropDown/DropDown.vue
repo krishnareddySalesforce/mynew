@@ -1,6 +1,6 @@
 <template>
   <div class="drop-down-outer-container bg-light-blue">
-    <div class="drop-down-inner-container">
+    <div class="drop-down-inner-container"  :class="{'scroll-space': scroll === true }" :style=" `height:${dropDownHeight}`">
       <div class="drop-down-option"
         :key="data.id"
         :class="{'selected bg-hawkes-blue': data.value === optionId }"
@@ -14,6 +14,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'DropDown',
@@ -24,6 +25,13 @@ export default {
     },
     optionId: {
       required: true
+    },
+    dropDownHeight: {
+      required: true
+    },
+    scroll: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {

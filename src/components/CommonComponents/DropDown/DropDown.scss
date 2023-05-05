@@ -1,14 +1,15 @@
 .drop-down-outer-container{
   box-shadow: 2px 4px 8px rgba(0, 42, 88, 0.15);
   border-radius: 8px;
-  padding: 16px 4px;
+  padding: 16px 4px 16px 0;
   position:absolute;
   z-index: 3;
   width: 100%;
   box-sizing: border-box;
   .drop-down-inner-container{
-    overflow-y: scroll;
-    height:200px;
+    overflow-y: auto;
+  }
+  .scroll-space{
     padding-right: 4px;
   }
 }
