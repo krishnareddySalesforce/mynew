@@ -547,31 +547,31 @@ export const constants = {
     {
       accountType: i18n.t('CURRENT_ACCOUNTS'),
       id: 1,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/91771f4e-3a4f-4206-b594-1743bb35ce86/original/current-accounts-logo.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/7bdea7be-bf48-4a1d-b088-d4b7346faf28/original/Group_48097086.svg',
       route: ''
     },
     {
       accountType: i18n.t('SAVINGS_ACCOUNTS'),
       id: 2,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/6f811e4f-07d9-401d-8c75-361f5bd8e897/original/Savings-logo.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/8b885fd5-5450-4e8f-af03-afdd6a555f56/original/Group_48097093.svg',
       route: ''
     },
     {
       accountType: i18n.t('LOANS'),
       id: 3,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/b51185ff-f2b3-4227-a2b3-ec28ec595819/original/Loan-logo.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/82376e21-b647-4a14-94f1-a24ae19a9e47/original/Group_48097091.svg',
       route: '/your-name'
     },
     {
       accountType: i18n.t('MORTGAGES'),
       id: 4,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/e7ec3b4f-014c-4117-8303-0a8fd2f2463b/original/Mortgage-logo.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/e3150f5e-ddd1-4277-8ae1-018079b4fc3e/original/Group_48097097_1_.svg',
       route: ''
     },
     {
       accountType: i18n.t('CREDIT_CARDS'),
       id: 5,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f0c1d7f4-c6be-4d30-b483-196333036d5b/original/Credit_card-logo.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/754fc8df-1c5b-4bca-9449-fff5b94f8c27/original/Group_48097096_1_.svg',
       route: ''
     }
   ],
@@ -579,27 +579,27 @@ export const constants = {
     {
       id: 1,
       option: i18n.t('ABOUT_US'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/5f4aa337-9350-4b6f-aa7a-a43e80e772fd/original/About_us.svg',
-      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/e2c8552d-df50-4086-8e37-5c1a98ea42fb/original/About_us.svg'
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/418f7877-4a44-4ec8-9c3c-f6b123946d35/original/Group_48097106.svg',
+      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/418f7877-4a44-4ec8-9c3c-f6b123946d35/original/Group_48097106.svg'
     },
     {
       id: 2,
       option: i18n.t('CAREERS'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/7e8008db-c8d1-4448-92de-8bd9f60c0415/original/Career.svg',
-      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/9085c2a3-718f-492e-912e-d611e7451536/original/Career.svg'
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/fca8e8cf-bbab-4af4-9b03-647d9a165b9f/original/Group_48097097_2_.svg',
+      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/fca8e8cf-bbab-4af4-9b03-647d9a165b9f/original/Group_48097097_2_.svg'
     },
     {
       id: 3,
       option: i18n.t('HELP'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/8b9d4a5e-ac4f-40d5-82a7-4e886ba4c026/original/Help.svg',
-      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f0e68673-3b98-4cc8-9a45-e6d22c055cdf/original/Help.svg'
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f5329f07-355d-4dab-bedd-5472c13f815b/original/Help.svg',
+      desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f5329f07-355d-4dab-bedd-5472c13f815b/original/Help.svg'
     }
   ],
   approvedImages: {
-    'Home improvement': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/6ebb5151-b8db-4d5b-90a7-26ec015dc472/original/Group_48097300.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/c619de88-007e-45fb-a822-c721d0b894e9/original/Group_48097262.svg' },
-    'Used vehicle': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/62f0ad88-c484-4eee-a1b9-db2b2b042ebe/original/Group_48097302.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/00eda964-aa71-4e93-bf21-1a4f39c64ab2/original/Car_Loan_2_.svg' },
-    Holiday: { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/d2125076-4c11-45a0-b6e0-bdb1a4918943/original/Group_48097301.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/616af254-7a74-48e7-bc4e-56f4c22720a6/original/Holidays.svg' },
-    'Rainy day fund': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/d36de1b2-075c-4ded-a074-cc58627bfcdc/original/Group_48097098.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/115ea5dc-0d87-40d0-a7e5-4bbfd1b48e07/original/Rainy_Day.svg' }
+    'Home improvement': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/7a8ee20e-a4a2-4d57-93f2-426d8d619917/original/home-approved-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/c619de88-007e-45fb-a822-c721d0b894e9/original/Group_48097262.svg' },
+    'Used vehicle': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/2ee37287-4126-4c94-86cc-0c7ce5415f19/original/used-vehicle-capone-mobile.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/00eda964-aa71-4e93-bf21-1a4f39c64ab2/original/Car_Loan_2_.svg' },
+    Holiday: { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/e9a6ed95-2f54-4e6e-9990-76ad1c84e528/original/holiday-approved-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/616af254-7a74-48e7-bc4e-56f4c22720a6/original/Holidays.svg' },
+    'Rainy day fund': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/03514e6b-9e99-4900-84a9-3d8807343071/original/rainy-day-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/115ea5dc-0d87-40d0-a7e5-4bbfd1b48e07/original/Rainy_Day.svg' }
   },
   approvedText: {
     'Home improvement': i18n.t('HOME_LOAN_APPLIED_TEXT'),
@@ -637,22 +637,22 @@ export const constants = {
     'Home improvement': {
       loanType: 'Home improvement',
       id: 1,
-      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/a9bd6ec4-9964-42e3-bd4b-fbe570cb003d/original/Home.svg'
+      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/f7815cb6-e42b-4aa6-8e7e-83406ac17728/original/capone-home-improvement.svg'
     },
     'Used vehicle': {
       loanType: 'Used vehicle',
       id: 2,
-      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/2c0590a1-ba3a-4031-97e4-f59afae4c849/original/Shuttle.svg'
+      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/83f71443-c8e8-4ddd-8849-3710bb372e64/original/capone-used-vehicle.svg'
     },
     Holiday: {
       loanType: 'Holiday',
       id: 3,
-      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/c8ec6131-7a17-4f34-a737-6f40d60f86d3/original/Picnic-area.svg'
+      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/170600fc-27d7-4260-89ce-3ad40746cdf7/original/capone-holiday.svg'
     },
     'Rainy day fund': {
       loanType: 'Rainy day fund',
       id: 4,
-      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/12098b08-0124-4f45-8a64-31f90f0b7fbd/original/Mixed-rain-hail.svg'
+      img: 'https://d3s87pah5oatx.cloudfront.net/uploads/6352746d-7a39-45ad-880b-110e07954e04/original/capone-rainy-day-fund.svg'
     }
   },
   loanStatus: {

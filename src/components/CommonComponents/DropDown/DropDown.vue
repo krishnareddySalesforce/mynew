@@ -1,9 +1,9 @@
 <template>
-  <div class="drop-down-outer-container bg-light-blue">
+  <div class="drop-down-outer-container bg-humming-bird">
     <div class="drop-down-inner-container"  :class="{'scroll-space': scroll === true }" :style=" `height:${dropDownHeight}`">
       <div class="drop-down-option"
         :key="data.id"
-        :class="{'selected bg-hawkes-blue': data.value === optionId }"
+        :class="{'selected bg-pigeon-post': data.value === optionId }"
         v-for="data in dropdownData">
         <label
           class="drop-down-value"

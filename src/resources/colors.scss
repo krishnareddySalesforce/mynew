@@ -56,6 +56,15 @@
 .humming-bird{
   color: $--humming-bird
 }
+.blumine{
+  color: $--blumine;
+}
+.alice-blue{
+  color: $--alice-blue
+}
+.pigeon-post{
+  color: $--pigeon-post;
+}
 /* background colors */
 .bg-primary {
   background-color: $--primary-color;
@@ -93,6 +102,13 @@
 .bg-humming-bird {
   background-color: $--humming-bird;
 }
+.bg-alice-blue{
+  background-color: $--alice-blue
+}
+.bg-pigeon-post{
+  background-color: $--pigeon-post;
+}
+
 /* outline colors */
 .outline-primary {
   outline-color: $--primary-color;
