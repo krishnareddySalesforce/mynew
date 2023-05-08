@@ -31,7 +31,7 @@
         </div>
         <div class="login" v-if="!userLoggedIn">
           <div class="account-types">
-            <img class="accounts-logo" alt="login" src='https://d3s87pah5oatx.cloudfront.net/uploads/73ab845d-234d-4472-a005-eab8bc1ce036/original/Group_48097097_3_.svg' />
+            <img class="accounts-logo" alt="login" src='https://d3s87pah5oatx.cloudfront.net/uploads/14179ec3-1df9-497e-911d-a0955a720c2a/original/capone-Logout.svg' />
             <span class="account-txt">{{ $t("LOGIN") }}</span>
           </div>
         </div>
