@@ -16,7 +16,7 @@
           @click="selected(data)"
           :class="{
             'dark-grey': data.id !== optionId,
-            black: data.id === optionId,
+            'black': data.id === optionId,
           }"
           >{{ data.value }}</label
         >
