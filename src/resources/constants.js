@@ -547,31 +547,31 @@ export const constants = {
     {
       accountType: i18n.t('CURRENT_ACCOUNTS'),
       id: 1,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/7bdea7be-bf48-4a1d-b088-d4b7346faf28/original/Group_48097086.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/b0e8d9f1-a358-4da4-9dff-40e77055f8b8/original/capone-current-accounts.svg',
       route: ''
     },
     {
       accountType: i18n.t('SAVINGS_ACCOUNTS'),
       id: 2,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/8b885fd5-5450-4e8f-af03-afdd6a555f56/original/Group_48097093.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/d22e7ba3-cb1e-404b-98ca-951de67b7481/original/capone-Savings.svg',
       route: ''
     },
     {
       accountType: i18n.t('LOANS'),
       id: 3,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/82376e21-b647-4a14-94f1-a24ae19a9e47/original/Group_48097091.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/1643c273-561f-4a2c-86a2-c35a35cff7ab/original/capone-Loan.svg',
       route: '/your-name'
     },
     {
       accountType: i18n.t('MORTGAGES'),
       id: 4,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/e3150f5e-ddd1-4277-8ae1-018079b4fc3e/original/Group_48097097_1_.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/8dd8383b-7368-48bf-be39-61cb9695817e/original/capone-Mortgage.svg',
       route: ''
     },
     {
       accountType: i18n.t('CREDIT_CARDS'),
       id: 5,
-      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/754fc8df-1c5b-4bca-9449-fff5b94f8c27/original/Group_48097096_1_.svg',
+      accountlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/9b05bd09-b10e-44e1-a842-2e226e98379f/original/capone-Credit_card.svg',
       route: ''
     }
   ],
@@ -579,19 +579,19 @@ export const constants = {
     {
       id: 1,
       option: i18n.t('ABOUT_US'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/418f7877-4a44-4ec8-9c3c-f6b123946d35/original/Group_48097106.svg',
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/49fd00ce-2545-4fd9-84d2-cd5d03ebbbe3/original/capone-About_us.svg',
       desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/418f7877-4a44-4ec8-9c3c-f6b123946d35/original/Group_48097106.svg'
     },
     {
       id: 2,
       option: i18n.t('CAREERS'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/fca8e8cf-bbab-4af4-9b03-647d9a165b9f/original/Group_48097097_2_.svg',
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/4c67aa0d-379f-469f-b55c-d31fa8b31dfc/original/capone-Career.svg',
       desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/fca8e8cf-bbab-4af4-9b03-647d9a165b9f/original/Group_48097097_2_.svg'
     },
     {
       id: 3,
       option: i18n.t('HELP'),
-      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f5329f07-355d-4dab-bedd-5472c13f815b/original/Help.svg',
+      optionlogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/56b400a4-6398-4581-afb5-e40f345f1c36/original/capone-Help.svg',
       desktopLogo: 'https://d3s87pah5oatx.cloudfront.net/uploads/f5329f07-355d-4dab-bedd-5472c13f815b/original/Help.svg'
     }
   ],
