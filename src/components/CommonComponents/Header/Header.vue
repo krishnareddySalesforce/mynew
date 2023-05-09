@@ -3,7 +3,7 @@
   <header :class="{'blurred-background': getSideNav === true}" >
     <div class="header-logo">
       <a @click=redirectToHome>
-        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/12f4d8ec-4dfe-4f28-b0bd-4183148d68ce/original/C1_LOGO_PRIMARY_BLUE_RED_CMYK_NOREG_1.svg" alt="Dynamic Bank" class="dynamic-bank-logo" />
+        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/3c23e6e5-1388-4b38-98c6-7db2f600f661/original/C1_LOGO_PRIMARY_BLUE_RED_CMYK_NOREG_1.svg" alt="Dynamic Bank" class="dynamic-bank-logo" />
       </a>
       <img
         src="https://d3s87pah5oatx.cloudfront.net/uploads/4d6d3ad8-1492-4a51-ace4-58bbd50c75fa/original/hamburgermenu.svg"
