@@ -596,10 +596,10 @@ export const constants = {
     }
   ],
   approvedImages: {
-    'Home improvement': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/7a8ee20e-a4a2-4d57-93f2-426d8d619917/original/home-approved-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/c619de88-007e-45fb-a822-c721d0b894e9/original/Group_48097262.svg' },
-    'Used vehicle': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/2ee37287-4126-4c94-86cc-0c7ce5415f19/original/used-vehicle-capone-mobile.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/00eda964-aa71-4e93-bf21-1a4f39c64ab2/original/Car_Loan_2_.svg' },
-    Holiday: { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/e9a6ed95-2f54-4e6e-9990-76ad1c84e528/original/holiday-approved-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/616af254-7a74-48e7-bc4e-56f4c22720a6/original/Holidays.svg' },
-    'Rainy day fund': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/03514e6b-9e99-4900-84a9-3d8807343071/original/rainy-day-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/115ea5dc-0d87-40d0-a7e5-4bbfd1b48e07/original/Rainy_Day.svg' }
+    'Home improvement': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/7a8ee20e-a4a2-4d57-93f2-426d8d619917/original/home-approved-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/b1a0c9a1-d016-4251-ace6-eee06b58331d/original/approved-house-loan-desktop-capone.svg' },
+    'Used vehicle': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/2ee37287-4126-4c94-86cc-0c7ce5415f19/original/used-vehicle-capone-mobile.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/73224748-d43f-4739-9d7c-54ecc6f0d785/original/used-vehicle-desktop-capone.svg' },
+    Holiday: { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/e9a6ed95-2f54-4e6e-9990-76ad1c84e528/original/holiday-approved-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/33a73faf-f083-4558-962b-f40ac414cde1/original/holiday-approved-desktop-capone.svg' },
+    'Rainy day fund': { mobileImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/03514e6b-9e99-4900-84a9-3d8807343071/original/rainy-day-mobile-capone.svg', desktopImage: 'https://d3s87pah5oatx.cloudfront.net/uploads/efd5e751-e160-4bf2-9eff-1bd76dcc47dc/original/rainy-day-desktop-capone.svg' }
   },
   approvedText: {
     'Home improvement': i18n.t('HOME_LOAN_APPLIED_TEXT'),
