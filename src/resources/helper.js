@@ -32,7 +32,7 @@ export default {
             }
           }
           if ((key === 8 || key === 46) && enteredValue.length > 4) {
-            if (caret === 7 || caret === 6) {
+            if (caret === 4 || caret === 3 || caret === 7 || caret === 6) {
               caret = caret - 1
             }
           }
