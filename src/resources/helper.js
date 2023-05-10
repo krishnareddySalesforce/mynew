@@ -23,17 +23,25 @@ export default {
       }
       window.requestAnimationFrame(() => {
         if (key === 8 || key === 46 || key === 37 || key === 39) {
-          if (enteredValue.length > 2 && enteredValue !== enteredValue.replaceAll(',', '') && enteredValue.length - enteredValue.replaceAll(',', '').length === 0 && key !== 37 && key !== 39) {
+          if (enteredValue.length > 2 && enteredValue.length < 6 && enteredValue !== enteredValue.replaceAll(',', '') && enteredValue.length - enteredValue.replaceAll(',', '').length === 0 && key !== 37 && key !== 39) {
             caret = caret - 1
           }
-          if ((key === 8 || key === 46) && enteredValue.length > 2) {
+          if ((key === 8 || key === 46) && enteredValue.length > 2 && enteredValue.length < 5) {
             if (caret === 3 || caret === 2) {
+              caret = caret - 1
+            }
+          }
+          if ((key === 8 || key === 46) && enteredValue.length > 4) {
+            if (caret === 7 || caret === 6) {
               caret = caret - 1
             }
           }
           element.selectionStart = caret
           element.selectionEnd = caret
         } else {
+          if (enteredValue.length > 5 && enteredValue !== enteredValue.replaceAll(',', '') && enteredValue.length - enteredValue.replaceAll(',', '').length >= 1 && key !== 37 && key !== 39) {
+            caret = caret - 1
+          }
           element.selectionStart = caret + (enteredValue.length - enteredValue.replaceAll(',', '').length)
           element.selectionEnd = caret + (enteredValue.length - enteredValue.replaceAll(',', '').length)
         }

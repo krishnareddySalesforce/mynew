@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-      <div class='login-container white'>
+      <div class='login-container white bg-mirage' @click.prevent="">
           <div class="logout" v-if="userLoggedIn">
               <span class="account-txt">{{ $t("LOGOUT") }}</span>
           </div>

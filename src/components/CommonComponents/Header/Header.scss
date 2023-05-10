@@ -9,6 +9,7 @@ header {
 header a {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .sidenav-container {
   backdrop-filter: blur(6px);
@@ -35,6 +36,7 @@ header a {
   display: none;
   .account-types {
     margin: 0 15px;
+    cursor: pointer;
   }
 }
 .desktop-about-company-container {
@@ -46,6 +48,9 @@ header a {
       display: flex;
       align-items: center;
       margin: 0 13px;
+      .about-company {
+        cursor: pointer;
+      }
       img {
         margin-right: 7px;
       }
@@ -177,6 +182,7 @@ header a {
       letter-spacing: $--ls-15;
       line-height: $--lh-22;
       font-weight: $--w-regular;
+      cursor: pointer;
     }
   }
   .header-container {
