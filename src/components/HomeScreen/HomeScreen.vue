@@ -6,7 +6,7 @@
       navigationEnabled=true
       navigationNextLabel= ''
       navigationPrevLabel= ''
-      paginationActiveColor="#3772FF">
+      paginationActiveColor="#42A1FF">
       <slide v-for="loan in $constants.loanTypes" :key="loan.id" :id="loan.id" class="home-slides">
         <div class="slide-contianer">
           <div class="loan-text-container">
@@ -23,15 +23,15 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import PrimaryButton from '../CommonComponents/Buttons/PrimaryButton/PrimaryButton.vue'
-import liquidParser from '../../liquid/liquidParser'
+// import liquidParser from '../../liquid/liquidParser'
 export default {
   name: 'HomeScreen',
   components: { Carousel, Slide, PrimaryButton },
   methods: {
     redirectTo (selectedValue) {
       if (selectedValue.route) {
-        const accountUrl = liquidParser.parse('{{site.url}}')
-        window.location.href = `${accountUrl}${selectedValue.route}`
+        // const accountUrl = liquidParser.parse('{{site.url}}')
+        // window.location.href = `${accountUrl}${selectedValue.route}`
         // this.$router.push(selectedValue.route)
       } else {
         return null

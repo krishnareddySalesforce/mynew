@@ -3,7 +3,7 @@
   <header :class="{'blurred-background': getSideNav === true}" >
     <div class="header-logo">
       <a @click=redirectToHome>
-        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/8f4fcf95-7ddc-4664-9320-674f80610ccb/original/caponelogo.svg" alt="Dynamic Bank" class="dynamic-bank-logo" />
+        <img src="https://d3s87pah5oatx.cloudfront.net/uploads/d32437d4-9aa4-4ecd-a641-97273be95fd7/original/vanquis_white_logo.png" alt="Dynamic Bank" class="dynamic-bank-logo" />
       </a>
       <img
         src="https://d3s87pah5oatx.cloudfront.net/uploads/4d6d3ad8-1492-4a51-ace4-58bbd50c75fa/original/hamburgermenu.svg"
@@ -43,7 +43,7 @@
 <script>
 import SideNav from '../SideNav/SideNav.vue'
 import { mapGetters, mapActions } from 'vuex'
-import liquidParser from '../../../liquid/liquidParser'
+// import liquidParser from '../../../liquid/liquidParser'
 export default {
   name: 'HeaderComponent',
   components: { SideNav },
@@ -57,8 +57,8 @@ export default {
     ...mapActions(['closeSideNav', 'updateAccountNavSelected', 'updateProfileNavSelected']),
     ...mapGetters(['getNavSelected']),
     redirectToHome () {
-      const accountUrl = liquidParser.parse('{{site.url}}')
-      window.location.href = `${accountUrl}`
+      // const accountUrl = liquidParser.parse('{{site.url}}')
+      // window.location.href = `${accountUrl}`
       // this.$router.push('/')
     },
     showSideNavBar () {
@@ -67,8 +67,8 @@ export default {
     navigateTo (selectedValue) {
       this.updateAccountNavSelected(selectedValue.id)
       if (selectedValue.route) {
-        const accountUrl = liquidParser.parse('{{site.url}}')
-        window.location.href = `${accountUrl}${selectedValue.route}`
+        // const accountUrl = liquidParser.parse('{{site.url}}')
+        // window.location.href = `${accountUrl}${selectedValue.route}`
         // this.$router.push(selectedValue.route)
       } else {
         return null
@@ -77,8 +77,8 @@ export default {
     navigateToProfile (selectedValue) {
       this.updateProfileNavSelected(selectedValue.id)
       if (selectedValue.route) {
-        const accountUrl = liquidParser.parse('{{site.url}}')
-        window.location.href = `${accountUrl}${selectedValue.route}`
+        // const accountUrl = liquidParser.parse('{{site.url}}')
+        // window.location.href = `${accountUrl}${selectedValue.route}`
         // this.$router.push(selectedValue.route)
       } else {
         return null

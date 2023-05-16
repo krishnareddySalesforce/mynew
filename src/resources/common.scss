@@ -177,10 +177,10 @@ input[type="radio"]:checked:after {
   transition: background 0.8s;
 }
 .primary-cta:hover:enabled {
-  background: #497FFF radial-gradient(circle, transparent 1%, #497FFF 1%) center/15000%;
+  background: #42A1FF radial-gradient(circle, transparent 1%, #42A1FF 1%) center/15000%;
 }
 .primary-cta:active:enabled {
-  background-color: #3772ff;
+  background-color: #42A1FF;
   background-size: 100%;
   transition: background 0s;
 }

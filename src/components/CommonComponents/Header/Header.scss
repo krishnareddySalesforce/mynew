@@ -10,6 +10,9 @@ header a {
   display: flex;
   align-items: center;
 }
+.dynamic-bank-logo {
+  width: 100px !important;
+}
 .sidenav-container {
   backdrop-filter: blur(6px);
   position: absolute;
@@ -77,7 +80,7 @@ header a {
     margin-right: 109px !important;
     .dynamic-bank-logo {
       width: 110px !important;
-      height: 44px;
+      height: 26px;
     }
   }
   .desktop-account-types {
