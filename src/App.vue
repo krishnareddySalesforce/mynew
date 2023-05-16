@@ -25,14 +25,14 @@ export default {
 </script>
 <style>
 @font-face {
-  font-family: "Inter";
+  font-family: "Montserrat", sans-serif;
   font-display: swap;
-  src: url(./assets/fonts/Inter-Regular.ttf) format("truetype");
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap) format("truetype");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Montserrat", sans-serif;
   font-display: swap;
-  src: url(./assets/fonts/Inter-Bold.ttf) format("truetype");
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap) format("truetype");
   font-weight: bold;
 }
 .blurred-background{
