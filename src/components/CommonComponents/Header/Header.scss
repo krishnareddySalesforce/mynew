@@ -65,6 +65,9 @@ header a {
   display: none;
   margin-right: 66.5px;
 }
+.mobile-view {
+  cursor: pointer;
+}
 
 // desktop screen design
 @media only screen and (min-width: 1440px) {
@@ -176,6 +179,12 @@ header a {
     align-items: center;
     justify-content: center;
     -webkit-font-smoothing: antialiased !important;
+    .login {
+      cursor: pointer;
+    }
+    .logout {
+      cursor: pointer;
+    }
     .account-txt {
       letter-spacing: $--ls-15;
       line-height: $--lh-22;

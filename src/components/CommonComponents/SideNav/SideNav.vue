@@ -24,13 +24,13 @@
           <span class="account-txt">{{options.option}}</span>
         </div>
         <div class="logout" v-if="userLoggedIn">
-          <div class="account-types">
+          <div class="account-types" @click="logout()">
             <img class="accounts-logo" alt="logout" src='https://d3s87pah5oatx.cloudfront.net/uploads/392365c7-d11f-4bb1-a0bd-bff2c365d29f/original/Logout.svg' />
             <span class="account-txt">{{ $t("LOGOUT") }}</span>
           </div>
         </div>
         <div class="login" v-if="!userLoggedIn">
-          <div class="account-types" @click="redirectTo()">
+          <div class="account-types" @click="login()">
             <img class="accounts-logo" alt="login" src='https://d3s87pah5oatx.cloudfront.net/uploads/392365c7-d11f-4bb1-a0bd-bff2c365d29f/original/Logout.svg' />
             <span class="account-txt">{{ $t("LOGIN") }}</span>
           </div>
@@ -57,9 +57,13 @@ export default {
         return null
       }
     },
-    redirectTo () {
+    login () {
       const accountUrl = liquidParser.parse('{{site.url}}')
       window.location.href = `${accountUrl}/private/dashboard`
+    },
+    logout () {
+      const accountUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${accountUrl}/logout`
     }
   }
 }

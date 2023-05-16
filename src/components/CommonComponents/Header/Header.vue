@@ -25,10 +25,10 @@
           </div>
         </div>
       <div class='login-container white'>
-          <div class="logout" v-if="userLoggedIn">
+          <div class="logout" v-if="userLoggedIn" @click="logout()">
               <span class="account-txt">{{ $t("LOGOUT") }}</span>
           </div>
-          <div class="login" v-if="!userLoggedIn">
+          <div class="login" v-if="!userLoggedIn" @click="login">
               <span class="account-txt">{{ $t("LOGIN") }}</span>
           </div>
       </div>
@@ -43,7 +43,7 @@
 <script>
 import SideNav from '../SideNav/SideNav.vue'
 import { mapGetters, mapActions } from 'vuex'
-// import liquidParser from '../../../liquid/liquidParser'
+import liquidParser from '../../../liquid/liquidParser'
 export default {
   name: 'HeaderComponent',
   components: { SideNav },
@@ -56,6 +56,14 @@ export default {
   methods: {
     ...mapActions(['closeSideNav', 'updateAccountNavSelected', 'updateProfileNavSelected']),
     ...mapGetters(['getNavSelected']),
+    login () {
+      const siteUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${siteUrl}/private/dashboard`
+    },
+    logout () {
+      const siteUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${siteUrl}/logout`
+    },
     redirectToHome () {
       // const accountUrl = liquidParser.parse('{{site.url}}')
       // window.location.href = `${accountUrl}`
