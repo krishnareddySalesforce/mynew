@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="login" v-if="!userLoggedIn">
-          <div class="account-types">
+          <div class="account-types" @click="redirectTo()">
             <img class="accounts-logo" alt="login" src='https://d3s87pah5oatx.cloudfront.net/uploads/392365c7-d11f-4bb1-a0bd-bff2c365d29f/original/Logout.svg' />
             <span class="account-txt">{{ $t("LOGIN") }}</span>
           </div>
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-// import liquidParser from '../../../liquid/liquidParser'
+import liquidParser from '../../../liquid/liquidParser'
 export default {
   name: 'SideNav',
   data: () => ({
@@ -56,6 +56,10 @@ export default {
       } else {
         return null
       }
+    },
+    redirectTo () {
+      const accountUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${accountUrl}/private/dashboard`
     }
   }
 }
