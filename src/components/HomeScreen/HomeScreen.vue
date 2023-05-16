@@ -13,7 +13,7 @@
             <span class="loan-type white">{{ loan.loantype }}</span>
             <span class="loan-description white">{{ loan.loandesc }}</span>
           </div>
-          <primary-button :text="$t('APPLY_NOW')" :onClick="() => redirectTo(loan)"/>
+          <primary-button :text="$t('APPLY_NOW')"/>
         </div>
       </slide>
     </carousel>

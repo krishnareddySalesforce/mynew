@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="login" v-if="!userLoggedIn">
-          <div class="account-types">
+          <div class="account-types"  @click="redirectTo()">
             <img class="accounts-logo" alt="login" src='https://d3s87pah5oatx.cloudfront.net/uploads/14179ec3-1df9-497e-911d-a0955a720c2a/original/capone-Logout.svg' />
             <span class="account-txt">{{ $t("LOGIN") }}</span>
           </div>
@@ -56,6 +56,10 @@ export default {
       } else {
         return null
       }
+    },
+    redirectTo () {
+      const accountUrl = liquidParser.parse('{{site.url}}')
+      window.location.href = `${accountUrl}/private/dashboard`
     }
   }
 }
