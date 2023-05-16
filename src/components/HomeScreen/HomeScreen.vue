@@ -13,7 +13,7 @@
             <span class="loan-type white">{{ loan.loantype }}</span>
             <span class="loan-description white">{{ loan.loandesc }}</span>
           </div>
-          <primary-button :text="$t('APPLY_NOW')"/>
+          <primary-button :text="$t('APPLY_NOW')" :onClick="() => redirectTo(loan)"/>
         </div>
       </slide>
     </carousel>
@@ -23,16 +23,16 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import PrimaryButton from '../CommonComponents/Buttons/PrimaryButton/PrimaryButton.vue'
-// import liquidParser from '../../liquid/liquidParser'
+import liquidParser from '../../liquid/liquidParser'
 export default {
   name: 'HomeScreen',
   components: { Carousel, Slide, PrimaryButton },
   methods: {
     redirectTo (selectedValue) {
       if (selectedValue.route) {
-        // const accountUrl = liquidParser.parse('{{site.url}}')
-        // window.location.href = `${accountUrl}${selectedValue.route}`
-        // this.$router.push(selectedValue.route)
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
+        this.$router.push(selectedValue.route)
       } else {
         return null
       }

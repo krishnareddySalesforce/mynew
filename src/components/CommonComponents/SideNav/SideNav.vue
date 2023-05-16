@@ -50,8 +50,8 @@ export default {
   methods: {
     navigateTo (selectedValue) {
       if (selectedValue.route) {
-        // const accountUrl = liquidParser.parse('{{site.url}}')
-        // window.location.href = `${accountUrl}${selectedValue.route}`
+        const accountUrl = liquidParser.parse('{{site.url}}')
+        window.location.href = `${accountUrl}${selectedValue.route}`
         // this.$router.push(selectedValue.route)
       } else {
         return null
